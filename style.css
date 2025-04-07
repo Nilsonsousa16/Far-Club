@@ -1,0 +1,118 @@
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body {
+    background-color: #151515;
+}
+
+/* -- NAVEGAÇÃO */
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    background: transparent;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px #ffffff;
+}
+
+ul {
+    display: flex;
+    margin-top: 18px;
+    gap: 60px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav h2 {
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: 40px;
+    margin-top: 10px;
+    border: solid 2px #ffffff;
+    border-radius: 5px;
+    padding: 0px 3px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #ffffff;
+    display: flex;
+    font-size: 20px;
+}
+
+li a:hover {
+    transition: 0.3s all;
+    transform: scale(1.1);
+    font-size: 20x;
+}
+
+
+.mobile-menu {
+    display: none;
+}
+
+.menubtn {
+    display: none;
+}
+
+/* -- RESPONSIVIDADE -- */
+
+@media only screen and (max-width: 800px) {
+    #menu {
+     display: none;
+    }
+
+   .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: solid 2px #ffffff;
+   }
+
+   ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    gap: 15px;
+    margin-right: 20px;
+   }
+
+   .menubtn {
+    display: block;
+    padding-right: 20px;
+    color: #ffffff;
+    font-size: 40px;
+   }
+
+   nav h2 {
+    margin-top: 10px;
+   }
+
+   .open {
+    display: block;
+   }
+
+   li a {
+    font-size: 20px;
+   }
+
+}
+
+/* --- INICIO --- */
+
+#inicio {
+    background: url(./assets/img/fundo-farcry3.jpg) no-repeat center center;
+    height: 100vh;
+}
